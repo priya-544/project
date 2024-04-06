@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styler.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+        <form action="/" method="POST">
+            <div class="user-details">
+            <div class="input-box">
+                <span for="desc" class="details">Username</span>
+                <input type="text" class="form-control" name="user_id" id="title" aria-describedby="emailHelp" placeholder="Enter your username" required >
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Name</span>
+                <input type="text" class="form-control" name="name" id="desc" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Password</span>
+                <input type="text" class="form-control" name="password" id="desc" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Mobile Number</span>
+                <input type="number" class="form-control" name="phone_num" id="desc" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">E-mail</span>
+                <input type="text" class="form-control"  name="email" id="desc" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Address</span>
+                <input type="text" class="form-control" name="address" id="desc" placeholder="Enter your address" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Image</span>
+                <input type="text" class="form-control" name="image" id="desc" placeholder="Image here" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Desciption</span>
+                <input type="text" class="form-control" name="description" id="desc" placeholder="Text here" required>
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Delivery Available</span>
+                <input type="text" placeholder="Yes/No" class="form-control" name="status" id="desc">
+            </div>
+            <div class="input-box">
+                <span for="desc" class="details">Food Type</span>
+                <input type="text" placeholder="Veg / Non-veg / Both" class="form-control" name="type" id="desc">
+            </div>
+        </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+        </div>
+        
+    </div>        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>   
+    <div class="container">
+        <h2>List of Sellers</h2>
+            {% if allmenu|length==0 %}
+            <div class="alert alert-dark" role="alert">
+                No Seller Found. Be the first to Register!
+              </div>   
+               
+            {% else %}
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Lunch</th>
+                        <th scope="col">Dinner</th>
+                        <th scope="col">Specials</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+            <tbody>
+               
+            {% for menu1 in allmenu %}
+            <tr>
+                <td>{{menu1.day}}</td>
+                <td>{{menu1.lunch}}</td>
+                <td>{{menu1.dinner}}</td>
+                <td>{{menu1.specials}}</td>
+                <td>{{menu1.price}}</td>
+
+            </tr>
+            </tbody>
+        </table>
+            {% endfor %}
+            {% endif %}
+         
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Placed</title>
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.order-placed {
+    background-color: #fff;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-placed h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.order-placed p {
+    margin-bottom: 20px;
+}
+
+.order-placed button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-placed button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="order-placed">
+    <h2>Order Placed Successfully!</h2>
+    <p>Your order has been confirmed. Thank you for choosing us!</p>
+    <button onclick="goToHome()"><a href="/prost">OK</a></button>
+</div>
+
+
+
+<script>
+function goToHome() {
+    window.location.href = "home.html"; // Change the URL to your home page
+}
+</script>
+
+</body>
+</html>
